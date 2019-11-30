@@ -413,5 +413,6 @@ void warp() {
  }
 
  image = img;	// the most important line
+ image.convertTo2DPixels();
 }
 #endif
