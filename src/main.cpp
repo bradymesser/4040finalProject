@@ -41,7 +41,7 @@ int main(int argc, char *argv[]) {
 		copy(file.begin(), file.end(), writable);
 		writable[file.size()] = '\0';
 		Image t = Image(writable);
-		cout << "Generating palette from image " << file << endl;
+		cout << "Generating palette from image " << file << " this may take a while." << endl;
 		pal = Palette(t);
 		cout << "Palette generated.  There are " << pal.numColors << " possible pixel colors in this palette.\n";
 	}
